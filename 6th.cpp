@@ -71,6 +71,29 @@ class Graph{
 		}
 	}
 
+/*	#include<queue>
+
+void BFS(int startIndex) {
+    for (int i = 0; i < countCities; i++) visited[i] = 0;
+
+    queue<int> q;
+    visited[startIndex] = 1;
+    q.push(startIndex);
+
+    while (!q.empty()) {
+        int index = q.front();
+        q.pop();
+
+        for (int i = 0; i < list[index].nC; i++) {
+            int nextIndex = getCityIndex(list[index].connected[i]);
+            if (nextIndex != -1 && visited[nextIndex] == 0) {
+                visited[nextIndex] = 1;
+                q.push(nextIndex);
+            }
+        }
+    }
+}*/
+
 	bool isConnected(){
 		for(int i=0;i<countCities;i++){
 			visited[i]=0;
